@@ -36,7 +36,7 @@ from tensorflow.keras.losses import binary_crossentropy
 
 
 
-class UNetPlusPlus():
+class Dual_agruNet():
     
     """ 
     Unet++ Model design.

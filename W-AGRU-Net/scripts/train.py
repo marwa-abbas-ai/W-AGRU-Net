@@ -27,9 +27,9 @@ import matplotlib.pyplot as plt
 import time
 import tensorflow as tf
 
-from conn_atten_res import UNetPlusPlus
-from UNetPPDataGenerator import ImageDataGen
-from ImageDataExtractor import ImageDataExtractor
+from wagru_net import Dual_agruNet
+from generator import ImageDataGen
+from downloader import ImageDataExtractor
 #from ipywidgets import FloatProgress
 import ipywidgets 
 from tensorflow.keras.models import load_model
@@ -147,7 +147,7 @@ temp_data_generator = None
 # The default params are the one that were used in the original paper.
 # Input shape - (512, 512, 1), 
 # filters [32, 64, 128, 256, 512].
-conn_atten_res = UNetPlusPlus(input_shape = (128, 128, 1), deep_supervision = False)
+conn_atten_res = Dual_agruNet(input_shape = (128, 128, 1), deep_supervision = False)
 
 # call the build netowrk API to build the network.
 model = conn_atten_res.get_arwnet()

@@ -2,10 +2,15 @@
 Dual-Stream Attention Residual U-Net for Brain Tumor Segmentation in MRI
 ## Install
 Run: pip install -r requirements.txt
+# W-AGRU-Net
 
-## Train
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17825804.svg)](https://doi.org/10.5281/zenodo.17825804)## Train
 Run: python scripts/train.py
 
+## Code Availability
+**DOI:** 10.5281/zenodo.17825804  
+**Link:** https://doi.org/10.5281/zenodo.17825804  
+**GitHub:** https://github.com/marwa-abbas-ai/W-AGRU-Net
 ## Contact
 Marwa Abbas - marwa.abas@mu.edu.eg
 ## 📊 Results
